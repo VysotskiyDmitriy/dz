@@ -1,0 +1,17 @@
+/*Создайте массив со значениями: ‘AngularJS’, ‘jQuery’
+  1.Добавьте в начало массива значение ‘Backbone.js’
+  2.Добавьте в конец массива значения ‘ReactJS’ и ‘Vue.js’
+  3.Добавьте в массив значение ‘CommonJS’ вторым элементом
+  4.Найдите и удалите из массива значение ‘jQuery’, выведите его в alert со словами “Это здесь лишнее”*/
+
+let mas = ['AngularJS', 'jQuery'];
+
+mas.unshift('Backbone.js');
+console.log(mas);
+mas.push('ReactJS', 'Vue.js');
+console.log(mas);
+mas.splice(2, 0, 'CommonJS');
+console.log(mas);
+mas.splice(mas.indexOf('jQuery'), 1);
+alert('Это здесь лишнее' + ': ' + 'jQuery');
+console.log(mas);
